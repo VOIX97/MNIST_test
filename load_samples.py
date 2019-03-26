@@ -16,7 +16,7 @@ def load_mnist(dataset="training_data", digits=np.arange(10), path="."):
     fname_label = os.path.join(path, 'MNIST_data/t10k-labels-idx1-ubyte')
   else:
     raise ValueError("dataset must be 'training_data' or 'testing_data'")
-
+  print("Start loading ",dataset)
   flbl = open(fname_label, 'rb')
   magic_nr, size = struct.unpack(">II", flbl.read(8))
   lbl = pyarray("b", flbl.read())

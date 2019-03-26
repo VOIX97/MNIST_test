@@ -18,8 +18,8 @@
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Course" />
       <pane id="ProjectPane" />
+      <pane id="Course" />
     </panes>
   </component>
   <component name="PropertiesComponent">

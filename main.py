@@ -8,7 +8,7 @@ import os, struct
 from array import array as pyarray
 from numpy import append, array, int8, uint8, zeros
 
-if __name__ == '__main__':
+def MINST():
   INPUT = 28*28
   OUTPUT = 10
   net = NeuralNet([INPUT, 40, OUTPUT])
@@ -24,3 +24,9 @@ if __name__ == '__main__':
     if net.predict(test_feature[0]) == test_feature[1][0]:
       correct += 1
   print("准确率: ", correct/len(test_set))
+
+
+
+if __name__ == '__main__':
+    MINST()
+
